@@ -1,29 +1,34 @@
 <template>
   <div id="app">
-    
+    <Header/>
+    <Jumbo/>
+    <Main/>
+    <Footer/>
   </div>
 </template>
 
 <script>
-import Main from './components/Main.vue';
-import Header from './components/Main.vue';
+import Header from './components/MyHeader.vue';
+import Main from './components/MyMain.vue';
+import Footer from './components/MyFooter.vue';
+import Jumbo from './components/MyJumbo.vue';
 
 export default {
   name: 'App',
   components: {
-    Main,
     Header,
+    Footer,
+    Jumbo,
+    Main,
   }
 }
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+  * {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+  }
+
 </style>
