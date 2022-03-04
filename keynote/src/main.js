@@ -19,10 +19,12 @@ import { faMagnifyingGlass as Lens } from '@fortawesome/free-solid-svg-icons'
 import { faTrophy } from '@fortawesome/free-solid-svg-icons'
 import { faBolt } from '@fortawesome/free-solid-svg-icons'
 import { faQuestion } from '@fortawesome/free-solid-svg-icons'
+import { faAngleRight } from '@fortawesome/free-solid-svg-icons'
+import { faAngleLeft } from '@fortawesome/free-solid-svg-icons'
 
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 
-library.add(Lens, faTrophy, faBolt, faQuestion)
+library.add(Lens, faTrophy, faBolt, faQuestion, faAngleRight, faAngleLeft)
 Vue.component('font-awesome-icon', FontAwesomeIcon)
 Vue.config.productionTip = false
 /* Font Awesome */

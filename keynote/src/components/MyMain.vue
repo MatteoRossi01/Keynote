@@ -6,7 +6,7 @@
         <!-- Sub Box -->
 
         <!-- Team Box -->
-        <Team/>
+        <Team :Teams="Teams"/>
         <!-- Team Box -->
 
         <!-- Program Box -->
@@ -56,6 +56,35 @@ export default {
         Ticket,
         Presentation,
         Sponsor,
+    },
+
+    data() {
+        return {
+            /* Array gestione Team */
+            Teams: [
+                {
+                    name: 'CARL JONES',
+                    work: 'S&P Analyzer',
+                    src: require('./Partials/Main-Part/img/speaker-1.jpg'),
+                },
+                {
+                    name: 'JANET JONES',
+                    work: 'Newyork Posts GM',
+                    src: require('./Partials/Main-Part/img/speaker-2.jpg'),
+                },
+                {
+                    name: 'MICHAEL DOVER',
+                    work: 'Starbucks CEO',
+                    src: require('./Partials/Main-Part/img/speaker-3.jpg'),
+                },
+                {
+                    name: 'ANGELINA HOLY',
+                    work: 'Maxii Manager',
+                    src: require('./Partials/Main-Part/img/speaker-4.jpg'),
+                }
+            ]
+            /* Array gestione Team */
+        }
     }
 }
 </script>

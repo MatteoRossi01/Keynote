@@ -11,7 +11,7 @@
                 <div class="info-conf">{{conference.city}}</div>
                 <span>/</span>
                 <div class="info-conf">{{conference.speackers}}</div>
-            </div>
+            </div>            
             <a class="btn-jumbo" href="">REGISTER ONLINE</a>
         </div>
         
