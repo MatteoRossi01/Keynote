@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <Header/>
+    <Header :Navbar="Navbar"/>
     <Jumbo/>
     <Main/>
     <Footer/>
@@ -20,6 +20,49 @@ export default {
     Footer,
     Jumbo,
     Main,
+  },
+
+  data() {
+    return {
+
+      /* Array di oggetti per l'header */
+      Navbar: [
+        {
+          link: 'HOME',
+          active: true,
+        },
+        {
+          link: 'PAGES',
+          active: false,
+        },
+        {
+          link: 'PROGRAM',
+          active: false,
+        },
+        {
+          link: 'TICKETS',
+          active: false,
+        },
+        {
+          link: 'SPEAKERS',
+          active: false,
+        },
+        {
+          link: 'PAPERS',
+          active: false,
+        },
+        {
+          link: 'BLOG',
+          active: false,
+        },
+        {
+          link: 'SHORTCODES',
+          active: false,
+        },
+      ]
+      /* Array di oggetti per l'header */
+      
+    }
   }
 }
 </script>
@@ -29,6 +72,7 @@ export default {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
   }
 
 </style>
