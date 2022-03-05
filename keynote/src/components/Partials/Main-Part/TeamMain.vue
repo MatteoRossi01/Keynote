@@ -72,7 +72,7 @@ export default {
             margin-bottom: 40px;
 
             .card-team {
-                height: 120px;
+                height: 150px;
                 width: 160px;
                 margin: 0px 10px;
                 display: flex;

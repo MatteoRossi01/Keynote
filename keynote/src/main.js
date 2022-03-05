@@ -21,10 +21,15 @@ import { faBolt } from '@fortawesome/free-solid-svg-icons'
 import { faQuestion } from '@fortawesome/free-solid-svg-icons'
 import { faAngleRight } from '@fortawesome/free-solid-svg-icons'
 import { faAngleLeft } from '@fortawesome/free-solid-svg-icons'
+import { faClock } from '@fortawesome/free-solid-svg-icons'
+import { faUser } from '@fortawesome/free-solid-svg-icons'
+import { faLocationArrow } from '@fortawesome/free-solid-svg-icons'
+import { faPhone } from '@fortawesome/free-solid-svg-icons'
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
 
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 
-library.add(Lens, faTrophy, faBolt, faQuestion, faAngleRight, faAngleLeft)
+library.add(Lens, faTrophy, faBolt, faQuestion, faAngleRight, faAngleLeft, faClock, faUser, faLocationArrow, faPhone, faEnvelope)
 Vue.component('font-awesome-icon', FontAwesomeIcon)
 Vue.config.productionTip = false
 /* Font Awesome */
