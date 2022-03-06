@@ -26,11 +26,11 @@
         <!-- Ticket Box -->
 
         <!-- Presentation Box -->
-        <Presentation/>
+        <Presentation :Comments="Comments"/>
         <!-- Presentation Box -->
 
         <!-- Sponsor Box -->
-        <Sponsor/>
+        <Sponsor :Sponsors="Sponsors"/>
         <!-- Sponsor Box -->
 
     </section> 
@@ -115,7 +115,7 @@ export default {
             /* Array gestione days */
 
             /* Array gestione program speacker */
-            ProgramSpeacker : [
+            ProgramSpeacker: [
                 {
                     hour: '09:00 - 10:30',
                     room: 'ROOM A',
@@ -128,7 +128,7 @@ export default {
             /* Array gestione program speacker */
 
             /* Array gestione location */
-            LocationInfo : [
+            LocationInfo: [
                 {
                     name: 'GD BUILDING, GRAND CONFERENCE ROOM',
                     address: '11 GD Building, River Mall, New York, USA 8879',
@@ -139,7 +139,7 @@ export default {
             /* Array gestione location */
 
             /* Array gestione news */
-            News : [
+            News: [
                 {
                     date: '03 Dec 2013 / 0 Comments',
                     title: 'LOREM IPSUM DOLOR',
@@ -202,8 +202,51 @@ export default {
                         }
                     ],
                 },
-            ]
+            ],
             /* Array gestione ticket */
+
+            /* Array gestione comment */
+            Comments: [
+                {
+                    text: 'Stand out ande be vibrant with some of the best bright and bold templates on @Envato Elements. And add a splash of c... ',
+                    link: 'https://t.co/jFrsnzEJK7',
+                    day: '3 Days Ago',
+                },
+                {
+                    text: 'Do you need to deliver the perfect presentation or creative pitch? Sure, your ideas and plan need to be on-point, b... ',
+                    link: 'https://t.co/nCmvsJVDpW',
+                    day: '9 Days Ago',
+                },
+                {
+                    text: 'Cut yourself a piece of the BFCM sales pie with a solid marketing plan. Here are 5 ways to optimize your content fo... ',
+                    link: 'https://t.co/UZfKHshEOT',
+                    day: '11 Days Ago',
+                },
+            ],
+            /* Array gestione comment */
+
+            /* Array gestione sponsor */
+            Sponsors: [
+                {
+                    src: require('./Partials/Main-Part/img/banner-1.jpg')
+                },
+                {
+                    src: require('./Partials/Main-Part/img/banner-2.jpg')
+                },
+                {
+                    src: require('./Partials/Main-Part/img/banner-3.jpg')
+                },
+                {
+                    src: require('./Partials/Main-Part/img/banner-4.jpg')
+                },
+                {
+                    src: require('./Partials/Main-Part/img/banner-5.jpg')
+                },
+                {
+                    src: require('./Partials/Main-Part/img/banner-6.jpg')
+                },
+            ]
+            /* Array gestione sponsor */
         }
     }
 }

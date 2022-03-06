@@ -37,6 +37,7 @@ export default {
 
     .box-header {
         position: fixed;
+        z-index: 2;
         width: 100%;
         height: 70px;
         background-color: #fff;

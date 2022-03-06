@@ -26,10 +26,23 @@ import { faUser } from '@fortawesome/free-solid-svg-icons'
 import { faLocationArrow } from '@fortawesome/free-solid-svg-icons'
 import { faPhone } from '@fortawesome/free-solid-svg-icons'
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
+import { faPlay } from '@fortawesome/free-solid-svg-icons'
+import { faVolumeHigh } from '@fortawesome/free-solid-svg-icons'
+import { faGear } from '@fortawesome/free-solid-svg-icons'
+import { faSortDown } from '@fortawesome/free-solid-svg-icons'
+import { faSquareMinus } from '@fortawesome/free-solid-svg-icons'
+import { faTwitter } from '@fortawesome/free-brands-svg-icons'
+import { faTwitterSquare } from '@fortawesome/free-brands-svg-icons'
+import { faFacebookSquare } from '@fortawesome/free-brands-svg-icons'
+import { faPinterestSquare } from '@fortawesome/free-brands-svg-icons'
+import { faLinkedin } from '@fortawesome/free-brands-svg-icons'
+import { faGooglePlusSquare } from '@fortawesome/free-brands-svg-icons'
+
 
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 
-library.add(Lens, faTrophy, faBolt, faQuestion, faAngleRight, faAngleLeft, faClock, faUser, faLocationArrow, faPhone, faEnvelope)
+library.add(Lens, faTrophy, faBolt, faQuestion, faAngleRight, faAngleLeft, faClock, faUser, faLocationArrow, faPhone, faEnvelope, faPlay, faVolumeHigh, faGear, faSortDown, faTwitter,)
+library.add(faFacebookSquare, faPinterestSquare, faGooglePlusSquare, faSquareMinus, faLinkedin, faTwitterSquare)
 Vue.component('font-awesome-icon', FontAwesomeIcon)
 Vue.config.productionTip = false
 /* Font Awesome */
