@@ -176,6 +176,10 @@ export default {
                     letter-spacing: 1px;
                 }
 
+                .btn-sub:hover {
+                    background-color: #cc1b00;
+                }
+
                 .img-mini {
                     display: flex;
                     flex-direction: row;

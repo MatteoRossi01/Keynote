@@ -68,6 +68,10 @@ export default {
                 text-decoration: none;
                 font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
             }
+
+            .learn:hover {
+                color: #cc1b00;
+            }
         }
     }
     /* Box info product */

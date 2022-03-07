@@ -64,6 +64,10 @@ export default {
                 color: #fff;
                 background-color: #F62B0A;
             }
+
+            .arrow-team:hover {
+                background-color: #cc1b00;
+            }
         }
 
         .card-team-box {

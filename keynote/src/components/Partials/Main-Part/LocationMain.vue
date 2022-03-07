@@ -100,6 +100,10 @@ export default {
                     text-decoration: none;
                 }
 
+                .check:hover {
+                    color: #cc1b00;
+                } 
+
                 .contact {
                     padding-top: 5px;
                     margin-top: 30px;

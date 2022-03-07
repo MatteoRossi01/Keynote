@@ -62,6 +62,10 @@ export default {
                 text-decoration: none;
                 font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
             }
+
+            .text-orange:hover {
+                color: #cc1b00;
+            }
         }
 
         .card-news-box {
@@ -106,6 +110,10 @@ export default {
                     font-size: 15px;
                     text-decoration: none;
                     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                }
+
+                .learn:hover {
+                    color: #cc1b00;
                 }
             }
         }

@@ -133,6 +133,10 @@ export default {
                         font-weight: bold;
                     }
                 }
+
+                .buy:hover {
+                    background-color: #cc1b00;    
+                }
             }
         }
     }

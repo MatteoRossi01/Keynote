@@ -98,6 +98,11 @@ export default {
                 font-size: 14px;
                 text-decoration: none;
                 font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
+                cursor: pointer;
+            }
+
+            .text-orange:hover {
+                color: #cc1b00;
             }
         }
 

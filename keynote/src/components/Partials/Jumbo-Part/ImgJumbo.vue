@@ -86,6 +86,10 @@ export default {
                     letter-spacing: 1px;
                     margin-top: 25px;
                 }
+
+                .btn-jumbo:hover {
+                    background-color: #cc1b00;
+                }
             }
         }
     /* Jumbo img */
