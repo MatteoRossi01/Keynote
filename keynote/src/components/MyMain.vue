@@ -70,17 +70,17 @@ export default {
                 {
                     name: 'JANET JONES',
                     work: 'Newyork Posts GM',
-                    src: require('./Partials/Main-Part/img/speaker-2.jpg'),
+                    src: require('./Partials/Main-Part/img/speaker-5.jpg'),
                 },
                 {
                     name: 'MICHAEL DOVER',
                     work: 'Starbucks CEO',
-                    src: require('./Partials/Main-Part/img/speaker-3.jpg'),
+                    src: require('./Partials/Main-Part/img/speaker-4.jpg'),
                 },
                 {
                     name: 'ANGELINA HOLY',
                     work: 'Maxii Manager',
-                    src: require('./Partials/Main-Part/img/speaker-4.jpg'),
+                    src: require('./Partials/Main-Part/img/speaker-3.jpg'),
                 }
             ],
             /* Array gestione Team */
@@ -90,26 +90,32 @@ export default {
                 {
                     day: 'DAY 1',
                     date: '23 may 2016',
+                    active: true,
                 },
                 {
                     day: 'DAY 2',
-                    date: '24 may 2016'
+                    date: '24 may 2016',
+                    active: false,
                 },
                 {
                     day: 'DAY 3',
-                    date: '25 may 2016'
+                    date: '25 may 2016',
+                    active: false,
                 },
                 {
                     day: 'DAY 4',
-                    date: '26 may 2016'
+                    date: '26 may 2016',
+                    active: false,
                 },
                 {
                     day: 'DAY 5',
-                    date: '27 may 2016'
+                    date: '27 may 2016',
+                    active: false,
                 },
                 {
                     day: '',
-                    date: ''
+                    date: '',
+                    active: false,
                 },
             ],
             /* Array gestione days */
@@ -123,7 +129,8 @@ export default {
                     title: 'WELCOMING AND INTRODUCTION',
                     text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor voluptatibus ducimus hic blanditiis architecto numquam omnis.',
                     src: require('./Partials/Main-Part/img/speaker-8-150x150.jpg'),
-                }
+                    active: true,
+                },   
             ],
             /* Array gestione program speacker */
 
@@ -173,6 +180,7 @@ export default {
                             three: 'Lunch(International Buffet)',
                             four: 'Document Sheets',
                             five: '50USD Voucher For Next Event',
+                            featured: false,
                         }
                     ],
                 },
@@ -186,6 +194,7 @@ export default {
                             three: 'Lunch(International Buffet)',
                             four: 'Document Sheets',
                             five: '100USD Voucher For Next Event',
+                            featured: true,
                         }
                     ],
                 },
@@ -199,6 +208,7 @@ export default {
                             three: 'Lunch(International Buffet)',
                             four: 'Document Sheets',
                             five: '70USD Voucher For Next Event',
+                            featured: false,
                         }
                     ],
                 },

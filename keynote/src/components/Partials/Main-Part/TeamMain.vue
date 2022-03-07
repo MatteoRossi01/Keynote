@@ -16,6 +16,11 @@
         <div class="card-team-box">
             <div v-for="(speaker, index) in Teams" :key="index" class="card-team">
                 <img width="100%" height="100%" :src="speaker.src" alt="">
+                <div class="hover-back">
+                    <font-awesome-icon class="hover-icon" icon="fa-brands fa-twitter" />
+                    <font-awesome-icon class="hover-icon" icon="fa-brands fa-facebook-f" />
+                    <font-awesome-icon class="hover-icon" icon="fa-brands fa-linkedin-in" />
+                </div>
                 <span class="name-team">{{speaker.name}}</span>
                 <span class="work">{{speaker.work}}</span>
             </div>
@@ -29,6 +34,7 @@
 <script>
 export default {
     props: ['Teams']
+    
 }
 </script>
 
@@ -76,9 +82,10 @@ export default {
             margin-bottom: 40px;
 
             .card-team {
-                height: 150px;
+                height: 160px;
                 width: 160px;
                 margin: 0px 10px;
+                position: relative;
                 display: flex;
                 flex-direction: column;
                 align-items: center;
@@ -97,6 +104,28 @@ export default {
                     font-size: 11px;
                     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
                 }
+
+                .hover-back {
+                    height: 112px;
+                    width: 160px;
+                    background-color: rgba($color: #F62B0A, $alpha: 0.6);
+                    position: absolute;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    display: none;
+
+                    .hover-icon {
+                        color: #fff;
+                        margin: 0px 10px;
+                        font-size: 17px;
+                        cursor: pointer;
+                    }
+                }
+            }
+
+            .card-team:hover .hover-back {
+                display: flex;
             }
         }
     }

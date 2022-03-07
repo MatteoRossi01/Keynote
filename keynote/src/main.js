@@ -34,15 +34,17 @@ import { faSquareMinus } from '@fortawesome/free-solid-svg-icons'
 import { faTwitter } from '@fortawesome/free-brands-svg-icons'
 import { faTwitterSquare } from '@fortawesome/free-brands-svg-icons'
 import { faFacebookSquare } from '@fortawesome/free-brands-svg-icons'
+import { faFacebookF } from '@fortawesome/free-brands-svg-icons'
 import { faPinterestSquare } from '@fortawesome/free-brands-svg-icons'
 import { faLinkedin } from '@fortawesome/free-brands-svg-icons'
+import { faLinkedinIn } from '@fortawesome/free-brands-svg-icons'
 import { faGooglePlusSquare } from '@fortawesome/free-brands-svg-icons'
 
 
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 
 library.add(Lens, faTrophy, faBolt, faQuestion, faAngleRight, faAngleLeft, faClock, faUser, faLocationArrow, faPhone, faEnvelope, faPlay, faVolumeHigh, faGear, faSortDown, faTwitter,)
-library.add(faFacebookSquare, faPinterestSquare, faGooglePlusSquare, faSquareMinus, faLinkedin, faTwitterSquare)
+library.add(faFacebookSquare, faPinterestSquare, faGooglePlusSquare, faSquareMinus, faLinkedin, faTwitterSquare, faFacebookF, faLinkedinIn)
 Vue.component('font-awesome-icon', FontAwesomeIcon)
 Vue.config.productionTip = false
 /* Font Awesome */

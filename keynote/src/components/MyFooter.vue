@@ -5,7 +5,7 @@
         <!-- Container info footer -->
         <div class="footer-info-container">
 
-            <div v-for="(info, index) in FooterInfo" :key="index" class="box-info">
+            <div v-for="(info, index) in FooterInfo" :key="'info'+index" class="box-info">
                 <h6 class="title">{{info.title}}</h6>
                 <p class="text-1">{{info.text}}</p>
                 <div v-for="(icons, index) in info.social" :key="index" class="social-box">
@@ -18,7 +18,7 @@
                 </div>
             </div>
 
-            <div v-for="(obj, index) in FooterNews" :key="index" class="box-info">
+            <div v-for="(obj, index) in FooterNews" :key="'news'+index" class="box-info">
                 <h6 class="title">{{obj.title}}</h6>
 
                 <div v-for="(text, index) in obj.news" :key="index">
@@ -46,13 +46,13 @@
 
             </div>
 
-            <div v-for="(obj, index) in FooterSeat" :key="index" class="box-info">
+            <div v-for="(obj, index) in FooterSeat" :key="'seat'+index" class="box-info">
                 <h6 class="title">{{obj.title}}</h6>
                 <p class="text-1">{{obj.text}}</p>
                 <a class="btn-sub" href="#">CHECK OUT TICKETS!</a>
             </div>
 
-            <div v-for="(obj, index) in FooterImg" :key="index" class="box-info">
+            <div v-for="(obj, index) in FooterImg" :key="'img'+index" class="box-info">
                 <h6 class="title">{{obj.title}}</h6>
                 <div v-for="(img, index) in obj.images" :key="index" class="img-mini">
                     <img class="img-footer" :src="img.img1">

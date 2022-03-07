@@ -16,7 +16,7 @@
         <div class="card-program-box">
 
             <div class="days-row">
-                <div v-for="(obj, index) in Days" :key="index" class="day-box">
+                <div v-for="(obj, index) in Days" :key="index" :class="obj.active ? 'active' : ''" class="day-box" >
                     <span class="day">{{obj.day}}</span>
                     <span class="date">{{obj.date}}</span>
                 </div>
@@ -24,18 +24,18 @@
 
             <div v-for="(obj, index) in ProgramSpeacker" :key="index" class="info-row">
                 <div class="box-hours">
-                    <span class="text-hour">
+                    <div class="text-hour">
                         <font-awesome-icon class="icon-hour" icon="fa-solid fa-clock" />
                         {{obj.hour}}
-                    </span>
-                    <span class="text-hour">
+                    </div>
+                    <div class="text-hour">
                         <font-awesome-icon class="icon-hour" icon="fa-solid fa-location-arrow" />
                         {{obj.room}}
-                    </span>
-                    <span class="text-hour">
+                    </div>
+                    <div class="text-hour">
                         <font-awesome-icon class="icon-hour" icon="fa-solid fa-user" />
-                        {{obj.speacker}}
-                    </span>
+                        <span class="color-name">{{obj.speacker}}</span>
+                    </div>
                 </div>
                 <div class="box-info">
                     <h4 class="title-info">{{obj.title}}</h4>
@@ -52,7 +52,20 @@
 
 <script>
 export default {
-    props: ['Days', 'ProgramSpeacker']
+    props: ['Days', 'ProgramSpeacker'],
+    data() {
+        return {
+
+        }
+    },
+
+    methods: {
+        goToSlide(indice){
+
+            this.active = indice;
+
+        },
+    }
 }
 </script>
 
@@ -124,6 +137,7 @@ export default {
                     flex-direction: column;
                     background-color: #F62B0A;
                     border-left: 1px solid rgba($color: #424242, $alpha: 0.4);
+                    cursor: pointer;
 
                     .day {
                         color: #fff;
@@ -139,9 +153,15 @@ export default {
                         color: #fff;
                     }
 
-                    .active-info {
-                        color: #C72B11;
-                    }
+                    
+                }
+
+                .day-box:hover {
+                    background-color: #cc1b00;
+                }
+
+                .active {
+                    background-color: #cc1b00;
                 }
             }
 
@@ -171,6 +191,10 @@ export default {
                             margin-right: 20px;
                             color: #424242;
                             font-size: 18px;
+                        }
+
+                        .color-name {
+                            color: #F62B0A;
                         }
                     }
                 }

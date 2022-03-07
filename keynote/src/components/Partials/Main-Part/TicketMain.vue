@@ -14,6 +14,10 @@
                 <div class="type-ticket">
                     <h5>{{ticket.type}}</h5>
                     <span>{{ticket.cost}}</span>
+                    <div class="featured-box">
+                        <span class="featured">featured</span>
+                    </div>
+                    <div class="trasparent"></div>
                 </div>
                 <div v-for="(text, index) in ticket.service" :key="index" class="service-ticket">
                     <span>{{text.one}}</span>
@@ -83,6 +87,7 @@ export default {
                     background-color: #E9E9E9;
                     width: 100%;
                     height: 25%;
+                    position: relative;
                     display: flex;
                     align-items: center;
                     flex-direction: column;
@@ -98,6 +103,22 @@ export default {
                         font-size: 17px;
                         font-weight: bold;
                         margin-top: -8px;
+                    }
+
+                    .featured-box {
+                        transform: rotate(41deg);
+                        background-image: linear-gradient(to right, rgba(255,0,0,0), rgba(255,0,0,1));
+                        position: absolute;
+                        top: 14px;
+                        right: -20px;
+                        display: none;
+
+                        .featured {
+                            color: #fff;
+                            font-size: 14px;
+                            font-family: 'Courier New', Courier, monospace;
+                            padding: 5px 20px;
+                        }
                     }
                 }
 
